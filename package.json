@@ -1,0 +1,30 @@
+{
+  "name": "last-successful-build-action",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Action to find the sha of the last successful workflow run.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build src/main.ts -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shantanus1/last-successful-build-action.git"
+  },
+  "keywords": [
+    "actions",
+    "node",
+    "setup"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "~1.10.0",
+    "@actions/github": "~5.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "~16.11.7",
+    "@vercel/ncc": "~0.34.0",
+    "typescript": "~4.8.4"
+  }
+}
